@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testSuite">
+
+    <test name="testSuite">
+        <!--<parameter name="login" value="user"></parameter>
+        <parameter name="password" value="qwerty123"></parameter>-->
+        <groups>
+            <run>
+                <include name="test-group"/>
+                <exclude name="exclude-group"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="ForTest3">
+            </class>
+        </classes>
+    </test>
+</suite>
